@@ -28,10 +28,15 @@ fetch("http://127.0.0.1:7677/allProducts").then((res) => res.json()).then((data)
   product.forEach((pr, i) => {
     pr.addEventListener("click", () => {
       detailModal.classList.add('active-detail')
+      tg.BackButton.show()
+      tg.BackButton.onClick(function () {
+        detailModal.classList.remove('active-detail')
+        tg.BackButton.hide()
+      })
     })
   })
 
-  backBtn.addEventListener('click', ()=> {
+  backBtn.addEventListener('click', () => {
     detailModal.classList.remove('active-detail')
   })
 
