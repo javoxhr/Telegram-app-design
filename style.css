@@ -17,6 +17,8 @@ html::-webkit-scrollbar {
 
 body {
     height: 100%;
+    background: var(--tg-theme-bg-color);
+    color: var(--tg-theme-text-color) !important;
 }
 
 .container {
@@ -109,10 +111,11 @@ body {
     padding: 10px;
     font-weight: 600;
     font-size: 18px;
-    background: #000;
-    color: #fff;
+    background: var(--tg-theme-button-color);
+    color: var(--tg-theme-button-text-color) !important;
     border: none;
     cursor: pointer;
+    border-radius: 3px;
 }
 
 @media screen and (max-width: 700px) {

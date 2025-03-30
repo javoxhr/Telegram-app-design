@@ -2,6 +2,10 @@ document.addEventListener("copy", (e) => e.preventDefault());
 document.addEventListener("contextmenu", (e) => e.preventDefault());
 document.addEventListener("selectstart", (e) => e.preventDefault());
 
+tg = window.Telegram.WebApp
+
+tg.expand()
+
 fetch("http://127.0.0.1:7677/allProducts").then((res) => res.json()).then((data) => {
   const productsWrp = document.querySelector(".products")
   data.forEach((el) => {
