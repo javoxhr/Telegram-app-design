@@ -120,7 +120,7 @@ body {
 }
 
 .detail-product-btns-wrapper button:last-child {
-    background: rgba(109, 109, 109, 0.3);
+    background: rgba(95, 95, 95, 0.3);
     color: var(--tg-theme-button-color) !important;
 }
 
