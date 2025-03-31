@@ -121,7 +121,7 @@ body {
 
 .detail-product-btns-wrapper button:last-child {
     background: rgba(0, 0, 0, 0.30);
-    color: var(--tg-theme-button-color);
+    color: var(--tg-theme-button-color) !important;
 }
 
 .product-title {
