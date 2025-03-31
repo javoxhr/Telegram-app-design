@@ -6,6 +6,10 @@ tg = window.Telegram.WebApp
 
 tg.expand()
 
+const buttonColor = Telegram.WebApp.themeParams.button_color;
+
+tg.setHeaderColor(buttonColor);
+
 fetch("https://fakestoreapi.com/products").then((res) => res.json()).then((data) => {
   const productsWrp = document.querySelector(".products")
   data.forEach((el) => {

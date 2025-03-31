@@ -40,6 +40,21 @@ body {
     object-fit: contain;
 }
 
+.top {
+    width: 100%;
+    height: 80px;
+    background: var(--tg-theme-button-color);
+    color: var(--tg-theme-button-text-color) !important;
+    border-radius: 0 0 30px 30px;
+}
+
+.top-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
 .product-text-wrapper {
     display: flex;
     flex-direction: column;
