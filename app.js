@@ -6,16 +6,16 @@ tg = window.Telegram.WebApp
 
 tg.expand()
 
-fetch("https://api.escuelajs.co/api/v1/products").then((res) => res.json()).then((data) => {
+fetch("https://fakestoreapi.com/products").then((res) => res.json()).then((data) => {
   const productsWrp = document.querySelector(".products")
   data.forEach((el) => {
     productsWrp.innerHTML += `
           <div class="product">
-            <img class="product-img" src="./not-photo.jpg" alt="">
+            <img class="product-img" src="${el.image}" alt="">
             <div class="product-text-wrapper">
                 <h2 class="product-title">${el.title}</h2>
                 <span>${el.price} uzs</span>
-                <span>${el.creationAt}</span>
+                <span>${el.rating.rate}⭐️</span>
             </div>
           </div>
         `

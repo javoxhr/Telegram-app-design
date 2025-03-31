@@ -30,13 +30,14 @@ body {
 
 .product {
     width: 200px;
-    box-shadow: 0 0 5px 0 #b1b1b1c9;
+    box-shadow: 0 0 5px 0 #929292c9;
+    border-radius: 5px;
 }
 
 .product-img {
     width: 100%;
     height: 150px;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .product-text-wrapper {
@@ -116,6 +117,11 @@ body {
     border: none;
     cursor: pointer;
     border-radius: 3px;
+}
+
+.detail-product-btns-wrapper button:last-child {
+    background: rgba(0, 0, 0, 0.30);
+    color: var(--tg-theme-button-color);
 }
 
 .product-title {
